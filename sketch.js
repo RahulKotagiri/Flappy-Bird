@@ -163,8 +163,9 @@ function draw() {
       //console.log("hello");
       
   }
-  if(mousePressedOver(restart) && gameState === END){
+  if(mousePressedOver(restart) || touches.length > 0 && gameState === END){
     Reset();
+    touches = [];
   }
     
 
